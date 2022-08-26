@@ -1,1 +1,1 @@
-Hello Gophers
+Hello omar estoy manipulando un txt

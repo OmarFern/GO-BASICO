@@ -1,2 +1,3 @@
 # curso-go
-Ejemplos curso GO desde cero EDteam
+
+plugin Emoji Snippets

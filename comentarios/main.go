@@ -1,15 +1,21 @@
 // package main es el paquete principal
-// que me permite ejecutar mi aplicación
-// de EDteam
+
+
 package main
 
+import "fmt"
 // Test es una variable de prueba
 var Test = 123
 
 // Pi es una constante que vale 3.14
 const Pi = 3.14
 
-/* func main() {
-
+ func main() {
+	fmt.Println(Pi)
+	fmt.Println(Test)
+	
 }
-*/
+
+
+
+

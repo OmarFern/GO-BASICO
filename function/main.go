@@ -21,7 +21,7 @@ func main() {
 	minusc, mayusc := convert(texto)
 	fmt.Println(minusc, mayusc)
 
-	content, err := ioutil.ReadFile("./hello.txt")
+	content, err := ioutil.ReadFile("hello2.txt")
 	if err != nil {
 		fmt.Printf("Ocurrio un error: %v", err)
 		return
@@ -53,7 +53,7 @@ func main() {
 		fmt.Println("Hello", text)
 	}("Gophers")
 }
-
+/*--------------------------------------------*/
 func sumv(nums ...int) int {
 	total := 0
 	for _, v := range nums {
@@ -61,13 +61,13 @@ func sumv(nums ...int) int {
 	}
 	return total
 }
-
+/*--------------------------------------------*/
 func hello2(name string) func(string) string {
 	return func(text string) string {
 		return "Hello " + name + " " + text
 	}
 }
-
+/*--------------------------------------------*/
 func filter(nums []int, callback func(int) bool) []int {
 	result := []int{}
 	for _, v := range nums {
@@ -78,7 +78,7 @@ func filter(nums []int, callback func(int) bool) []int {
 
 	return result
 }
-
+/*--------------------------------------------*/
 func division(dividendo, divisor int) (result int, err error) {
 	if divisor == 0 {
 		err = errors.New("no puedes dividir por cero")
@@ -88,22 +88,22 @@ func division(dividendo, divisor int) (result int, err error) {
 	result = dividendo / divisor
 	return
 }
-
+/*--------------------------------------------*/
 func convert(text string) (string, string) {
 	min := strings.ToLower(text)
 	may := strings.ToUpper(text)
 
 	return min, may
 }
-
+/*--------------------------------------------*/
 func sum(num1, num2 int) int {
 	return num1 + num2
 }
-
+/*--------------------------------------------*/
 func change(value *string) {
 	*value = "😋"
 }
-
+/*--------------------------------------------*/
 func hello(firstName string, lastName string) {
 	fmt.Printf("Hello %s %s", firstName, lastName)
 }

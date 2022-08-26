@@ -21,6 +21,6 @@ func main() {
 	p := &db
 	p.Professor = "Alvaro"
 
-	fmt.Printf("%+v\n", db)
-	fmt.Printf("%+v\n", p)
+	fmt.Printf("%+v \n", db)
+	fmt.Printf("%+v \n", p)
 }

@@ -7,19 +7,20 @@ func main() {
 	animals["cat"] = "🐈"
 	animals["dog"] = "🐕"
 
-	fmt.Println(animals)
+	fmt.Println(animals)//map[cat:🐈 dog:🐕]
 
 	fruits := map[string]string{
 		"apple":  "🍎",
 		"banana": "🍌",
 	}
-	fmt.Println(fruits)
+	fmt.Println(fruits)//ap[apple:🍎 banana:🍌]
 	delete(fruits, "banana")
-	fmt.Println(fruits)
+	fmt.Println(fruits)//map[apple:🍎]
 
 	if _, ok := animals["gorilla"]; !ok {
 		animals["gorilla"] = "🦍"
 	}
 
-	fmt.Println(animals)
+	fmt.Println(animals)//map[cat:🐈 dog:🐕 gorilla:🦍]
+
 }
